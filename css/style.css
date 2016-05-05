@@ -8,6 +8,7 @@
 a, a:hover{
 	text-decoration: none;
 	color: inherit;
+	cursor: pointer;
 }
 
 ul {
@@ -46,7 +47,12 @@ ul {
 	height: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
-	position: relative;
+}
+
+@media (max-width: 970px) {
+	.widthcont { 
+		width: 100%;
+	}
 }
 
 .line {
@@ -54,19 +60,47 @@ ul {
 	float: left;
 }
 
+.box {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
 .menu-line {
-	height: 65px;
+	float: left;
 	background: #000;
 }
 
+.menu-line .logo-box {
+	width: 133px;
+	height: 65px;
+	float: left;
+	position: relative;
+}
+
 .menu-line .logo {
+	display: block;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
+.menu-line .nav-box {
+	width: 100%;
+	height: 100%;
+	padding-left: 133px;
+	position: relative;
+}
+
+.menu-line .menunav {
+	width: 100%;
+	min-height: 65px;
+	float: left;
+	position: relative;
+}
+
 .menu-line .nav {
-	float: right;
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -81,8 +115,43 @@ ul {
 	line-height: 47px;
 	margin-left: 30px;
 	color: #fff;
-	float: right;
-	list-style: none;
+	float: left;
+}
+
+.menu-line .nav a:hover {
+	color: #89dcff;
+}
+
+@media (max-width: 970px) {
+	.menu-line .logo-box {
+		width: 100%;
+		text-align: center;
+	}
+
+	.menu-line .logo {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.menu-line .nav-box {
+		padding: 0;
+		float: left;
+	}
+
+	.menu-line .nav {
+		width: 100%;
+		height: auto;
+		position: static;
+		float: left;
+		transform: none;
+	}
+
+	.menu-line .nav li {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
 }
 
 .contact-line {
@@ -93,6 +162,7 @@ ul {
 .contact {
 	position: absolute;
 	right: 0;
+	color: #fff;
 }
 
 .contact > *:not(:first-child) {
@@ -107,6 +177,10 @@ ul {
 	text-align: right;
 	font-size: 14px;
 	line-height: 35px;
+}
+
+.contact a:hover {
+	color: #89dcff;
 }
 
 .contact #email:before {
@@ -172,25 +246,13 @@ ul {
 	cursor: pointer;
 }
 
-#content>div:nth-child(odd){
-	background-color: #fff;
-}
-
-#content>div:nth-child(even){
-	background-color: #f1f1f1;
-}
-
-#content>div:last-child{
-	background-color: #222;
-}
-		
-#content .name-dir{
+.name-dir{
 	text-align: center;
 	padding-top: 35px;
 	padding-bottom: 45px;
 }
 
-#content .name-dir h2{
+.name-dir h2{
 	font-family: GothaProMed;
 	text-transform: uppercase;
 	font-size: 40px;
@@ -198,14 +260,80 @@ ul {
 	color: #222;
 }
 
-#content #contacts h2{
-	color: #fff;	
-}
-
-#content .name-dir p{
+.name-dir p{
 	font-style: italic;
 	font-size: 16px;
 	color: #777;
+}
+
+.line-ourservices {
+	background-color: #fff;
+}
+
+.line-portfolio {
+	background-color: #f1f1f1;
+}
+
+.line-stagesofwork {
+	background-color: #fff;
+}
+
+.line-team {
+	background-color: #f1f1f1;
+}
+
+.line-contacts {
+	background-color: #222;
+}
+
+.line-contacts .name-dir h2 {
+	color: #fff;
+}
+
+.footer-line {
+	height: 55px;
+	background-color: #fff;
+}
+
+.footer-line p {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+
+	font-family: "Myriad Pro";
+	color: #555;
+}
+
+.footer-line p a {
+	color: #89dcff;
+	text-decoration: underline;
+}
+
+.footer-line ul {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.footer-line ul li {
+	float: left;
+}
+
+.footer-line ul li:not(:last-child) {
+	margin-right: 7px; 
+}
+
+.footer-line ul li a {
+	display: block;
+	width: 32px;
+	height: 35px;
+	color: #fff;
+	line-height: 32px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #89dcff;
 }
 
 
