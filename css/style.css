@@ -248,7 +248,6 @@ ul {
 
 .name-dir{
 	text-align: center;
-	padding-top: 35px;
 	padding-bottom: 45px;
 }
 
@@ -260,18 +259,120 @@ ul {
 	color: #222;
 }
 
+.name-dir .head-2{
+	margin-bottom: 0;
+	color: #fff;
+}
+
+
 .name-dir p{
 	font-style: italic;
 	font-size: 16px;
 	color: #777;
 }
 
+.content-box{
+	padding: 35px 0 45px 0;
+}
+
 .line-ourservices {
 	background-color: #fff;
 }
 
+.line-ourservices .content li {
+	width: 280px;
+	float: left;
+	font-family: "Myriad Pro";
+	text-align: center;
+}
+
+.line-ourservices .content li:not(:last-child) {
+	margin-right: 45px; 
+}
+
+.line-ourservices .content li h3 {
+	font-size: 1.5em;
+	color: #222;
+}
+
+.line-ourservices .content li p {
+	font-size: 0.9em;
+	color: #777;
+}
+
+.line-ourservices .content li .pic {
+	width: 65px;
+	height: 65px;
+	display: inline-block;
+	margin-bottom: 15px; 
+	border-radius: 50%;
+	border: 3px solid #89dcff;
+	background-repeat: no-repeat;
+}
+
+.line-ourservices .content li .pic-1 {
+	background-image: url("./../pictures/card.png");
+	background-position: 14px 12px;
+}
+
+.line-ourservices .content li .pic-2 {
+	background-image: url("./../pictures/card.png");
+	background-position: -46px 12px;
+}
+
+.line-ourservices .content li .pic-3 {
+	background-image: url("./../pictures/card.png");
+	background-position: -105px 14px;
+}
+
+
+.line-ourservices .content li *:not(.pic) {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+
 .line-portfolio {
 	background-color: #f1f1f1;
+}
+
+.line-portfolio .content li {
+	width: 290px;
+	float: left;
+	margin-bottom: 25px; 
+}
+
+.line-portfolio .content li:not(:nth-child(3n)) {
+	margin-right: 30px; 
+}
+
+.line-portfolio .content li img {
+	width: 100%;
+	height: 300px;
+	direction: block;
+}
+
+.line-portfolio .content li .label {
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+	padding-top: 25px;
+	margin-top: -4px;
+}
+
+.line-portfolio .content li .label * {
+	width: 100%;
+	font-family: "Myriad Pro";
+	text-align: center;
+}
+
+.line-portfolio .content li .label h3 {
+	color: #333;
+}
+
+.line-portfolio .content li .label p {
+	color: #777;
 }
 
 .line-stagesofwork {
@@ -286,8 +387,70 @@ ul {
 	background-color: #222;
 }
 
-.line-contacts .name-dir h2 {
+.line-contacts form {
+	width: 100%;
+	text-align: center;
+}
+
+.line-contacts form .fields {
+	width: 100%;
+	float: left;
+	font-size: 1.2em;
+	margin-bottom: 40px;
+}
+
+.line-contacts form .borders {
+	border-radius: 5px;
+	border: none;
+}
+
+.line-contacts form .left {
+	width: 50%;
+	float: left;
+	padding-right: 13px;
+}
+
+.line-contacts form .left input {
+	width: 100%;
+	line-height: 50px;
+	padding: 0 15px;
+}
+
+.line-contacts form .left input:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.line-contacts form .right {
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding-left: 13px;
+}
+
+.line-contacts form .right textarea {
+	width: 100%;
+	height: 200px;
+	max-height: 200px;
+	display: block;
+	padding: 15px;
+}
+
+.line-contacts form input::-webkit-input-placeholder,
+.line-contacts form textarea::-webkit-input-placeholder {
+	text-transform: uppercase;
+}
+
+
+.line-contacts form input[type="submit"] {
+	width: 240px;
+	line-height: 65px;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
 	color: #fff;
+	border: none;
+	border-radius: 5px;
+	background-color: #89dcff;
 }
 
 .footer-line {
