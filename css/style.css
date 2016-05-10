@@ -379,8 +379,164 @@ ul {
 	background-color: #fff;
 }
 
+.line-stagesofwork .content-box {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.line-stagesofwork .item {
+	width: 100%;
+	height: 170px;
+	float: left;
+	margin-bottom: 90px; 
+	position: relative;
+}
+
+.line-stagesofwork .item-last {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.line-stagesofwork .item:before {
+	content: "";
+	width: 3px;
+	height: 95px;
+	position: absolute;
+	z-index: 10;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -2px);
+	background-color: #89dcff;
+
+}
+
+.line-stagesofwork .item .text {
+	width: 30%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.line-stagesofwork .item .pic-box {
+	width: 40%;
+	text-align: center;
+}
+
+.line-stagesofwork .item-last .pic-box {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.line-stagesofwork .item .pic-box .pic,
+.line-stagesofwork .item-last .pic-box .pic {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.line-stagesofwork .item.left > * {
+	float: left;
+}
+
+.line-stagesofwork .item.left .text {
+	text-align: right;
+}
+
+.line-stagesofwork .item.right > * {
+	float: right;
+}
+
+.line-stagesofwork .item.right .text {
+	text-align: left;
+}
+
+.line-stagesofwork .text h3 {
+	font-family: "Myriad Pro";
+	font-weight: bold;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.line-stagesofwork .item .text p {
+	font-family: "Myriad Pro";
+	font-size: 1em;
+	color: #777;
+}
+
+.line-stagesofwork .item-last .text {
+	width: 100%;
+	text-align: center;
+}
+
+.line-stagesofwork .pic {
+	width: 170px;
+	height: 170px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+.line-stagesofwork .pic.pic-1 {
+	background-image: url('./../pictures/img-stage-1.png');
+}
+
+.line-stagesofwork .pic.pic-2 {
+	background-image: url('./../pictures/img-stage-2.png');
+}
+
+.line-stagesofwork .pic.pic-3 {
+	background-image: url('./../pictures/img-stage-3.png');
+}
+
+.line-stagesofwork .pic.pic-4 {
+	background-image: url('./../pictures/img-stage-4.png');
+}
+
+.line-stagesofwork .pic.pic-5 {
+	background-image: url('./../pictures/img-stage-5.png');
+}
+
+.line-stagesofwork .pic.pic-6 {
+	background-image: url('./../pictures/img-stage-6.png');
+}
+
 .line-team {
 	background-color: #f1f1f1;
+}
+
+.line-team ul {
+	width: 100%;
+}
+
+.line-team ul li img {
+	margin-bottom: 15px; 
+}
+
+.line-team ul li {
+	width: 270px;
+	float: left;
+	text-align: center;
+}
+
+.line-team ul li h3,
+.line-team ul li p {
+	font-family: "Myriad Pro";
+}
+
+.line-team ul li h3 {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #222;
+}
+
+.line-team ul li p {
+	font-size: 1em;	
+	color: #777;
+}
+
+.line-team ul li:not(:last-child) {
+	margin-right: 60px; 
 }
 
 .line-contacts {
@@ -395,7 +551,6 @@ ul {
 .line-contacts form .fields {
 	width: 100%;
 	float: left;
-	font-size: 1.2em;
 	margin-bottom: 40px;
 }
 
@@ -413,6 +568,7 @@ ul {
 .line-contacts form .left input {
 	width: 100%;
 	line-height: 50px;
+	font-size: 1em;
 	padding: 0 15px;
 }
 
@@ -432,6 +588,7 @@ ul {
 	height: 200px;
 	max-height: 200px;
 	display: block;
+	font-size: 1.2em;
 	padding: 15px;
 }
 
