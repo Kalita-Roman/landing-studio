@@ -310,6 +310,17 @@ ul {
 	background-repeat: no-repeat;
 }
 
+@media (max-width: 970px) {
+	.line-ourservices .content li {
+		width: 100%;
+		margin-bottom: 20px; 
+	}
+
+	.line-ourservices .content li .pic {
+		margin-bottom: 0px; 
+	}
+}
+
 .line-ourservices .content li .pic-1 {
 	background-image: url("./../pictures/card.png");
 	background-position: 14px 12px;
@@ -337,6 +348,10 @@ ul {
 	background-color: #f1f1f1;
 }
 
+.line-portfolio .content ul {
+	float: left;
+}
+
 .line-portfolio .content li {
 	width: 290px;
 	float: left;
@@ -345,6 +360,23 @@ ul {
 
 .line-portfolio .content li:not(:nth-child(3n)) {
 	margin-right: 30px; 
+}
+
+@media (max-width: 970px) { 
+	.line-portfolio .content ul {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 610px;
+	}
+
+	.line-portfolio .content li:not(:nth-child(3n)) {
+		margin-right: 0px; 
+	}
+
+	.line-portfolio .content li:not(:nth-child(2n)) {
+		margin-right: 30px; 
+	}
 }
 
 .line-portfolio .content li img {
@@ -533,6 +565,17 @@ ul {
 .line-team ul li p {
 	font-size: 1em;	
 	color: #777;
+}
+
+@media (max-width: 970px) {
+	.line-team ul li img {
+		margin-bottom: 5px; 
+	}
+
+	.line-team ul li {
+		width: 100%;
+		margin-bottom: 30px; 
+	}
 }
 
 .line-team ul li:not(:last-child) {
