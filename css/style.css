@@ -179,7 +179,7 @@ ul {
 	line-height: 35px;
 }
 
-.contact a:hover {
+.contact .hover:hover {
 	color: #89dcff;
 }
 
@@ -201,6 +201,19 @@ ul {
 	position: absolute;
 	left: -20px;
 	background: url(./../pictures/pics.png) no-repeat -30px 4px;
+}
+
+.contact .hover:hover:before {
+	animation-name: shake;
+	animation-duration: 0.2s; 
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% { transform: rotate(0); }
+	25% { transform: rotate(5deg); }
+	75% { transform: rotate(-5deg); }
+	100% { transform: rotate(0); }
 }
 
 .title-line {
@@ -691,7 +704,6 @@ ul {
 .footer-line ul li a {
 	display: block;
 	width: 32px;
-	height: 35px;
 	color: #fff;
 	line-height: 32px;
 	text-align: center;
@@ -699,4 +711,13 @@ ul {
 	background-color: #89dcff;
 }
 
+.footer-line ul li:hover {
+	animation-name: spin;
+    animation-duration: 0.5s;
+}
+
+@keyframes spin {
+	from { transform: rotate(0); }
+	to { transform: rotate(360deg); }
+}
 
